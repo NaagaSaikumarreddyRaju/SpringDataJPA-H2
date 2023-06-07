@@ -34,21 +34,20 @@ public class MainApp {
 
         repository.findAll().forEach(person -> System.out.println(person));
 
-        Person p = repository.findById(1L).get();
-
-        //System.out.println("Id with 1 is..."+p);
+        System.out.println(repository.findById(1L).get());
 
         System.out.println(repository.existsById(1L));
 
         repository.findAll().forEach(System.out::println);
 
         repository.findAllById(List.of(2L,3L)).forEach(System.out::println);
-        //repository.findAllById(Arrays.asList(2L,3L)).forEach(System.out::println);
+//        repository.findAllById(Arrays.asList(2L,3L)).forEach(System.out::println);
 
-        System.out.println(repository.count());
-
-        repository.deleteById(1L);
-
+//        System.out.println(repository.count());
+//
+//        repository.deleteById(1L);
+//        repository.delete(p2);
+//        repository.deleteAllById(List.of(1L,2L));
 
     }
 }
