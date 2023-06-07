@@ -6,8 +6,6 @@ import org.springframework.context.ApplicationContext;
 
 import java.util.List;
 
-import static org.hibernate.internal.util.collections.ArrayHelper.forEach;
-
 @SpringBootApplication
 public class MainApp {
     public static void main(String[] args) {
@@ -41,10 +39,9 @@ public class MainApp {
         repository.findAll().forEach(System.out::println);
 
         repository.findAllById(List.of(2L,3L)).forEach(System.out::println);
-//        repository.findAllById(Arrays.asList(2L,3L)).forEach(System.out::println);
+//      repository.findAllById(Arrays.asList(2L,3L)).forEach(System.out::println);
 
 //        System.out.println(repository.count());
-//
 //        repository.deleteById(1L);
 //        repository.delete(p2);
 //        repository.deleteAllById(List.of(1L,2L));
