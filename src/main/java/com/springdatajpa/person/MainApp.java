@@ -14,7 +14,7 @@ public class MainApp {
         PersonRepository repository = context.getBean(PersonRepository.class);
 
         Person p1 = new Person();
-        p1.setFirstName("SaiKumar");
+        p1.setFirstName("Sai");
         p1.setLastName("Raju");
 
         repository.save(p1);
